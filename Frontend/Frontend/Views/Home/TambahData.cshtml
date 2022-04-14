@@ -1,0 +1,85 @@
+﻿
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title">Quick Example</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+    <form method="post" action="https://jsonplaceholder.typicode.com/posts">
+        <div class="card-body">
+            <div class="form-group">
+                <label for="">Nama</label>
+                <input type="text" class="form-control" id="Name" placeholder="Nama Lengkap" name="Nama">
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <br />
+                <div class="icheck-primary d-inline">
+                    <input type="radio" id="radioPrimary1" name="JenisKelamin" value="Laki-laki">
+                    <label for="radioPrimary1">
+                        Laki-laki
+                    </label>
+                </div>
+                <div class="icheck-danger d-inline" style="margin-left:15px;">
+                    <input type="radio" id="radioDanger2" name="JenisKelamin" value="Perempuan">
+                    <label for="radioDanger2">
+                        Perempuan
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="">Alamat</label>
+                <input type="text" class="form-control" id="Alamat" placeholder="Alamat" name="Alamat">
+            </div>
+            <div class="form-group">
+                <label>Pekerjaan</label>
+                <select class="form-control" style="width: 100%;" name="Pekerjaan">
+                    <option value="Afliator">Afliator</option>
+                    <option value="Konstruktor">Konstruktor</option>
+                    <option value="Nelayan">Nelayan</option>
+                    <option value="Tukang Bagunan">Tukang Bagunan</option>
+                    <option value="Pegawai Negeri">Pegawai Negeri</option>
+                    <option value="Pegawai Swasta">Pegawai Swasta</option>
+                    <option value="Wirausahaawan">Wirausahaawan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Hobi</label>
+                <br />
+                <div class="icheck-primary d-inline">
+                    <input type="checkbox" id="checkboxPrimary1" name="Hobi" value="Berenang">
+                    <label for="checkboxPrimary1">
+                        Berenang
+                    </label>
+                </div>
+                <div class="icheck-primary d-inline" style="margin-left:15px;">
+                    <input type="checkbox" id="checkboxPrimary2" name="Hobi" value="Makan">
+                    <label for="checkboxPrimary2">
+                        Makan
+                    </label>
+                </div>
+                <div class="icheck-primary d-inline" style="margin-left:15px;">
+                    <input type="checkbox" id="checkboxPrimary3" name="Hobi" value="Terjun Payung">
+                    <label for="checkboxPrimary3">
+                        Terjun Payung
+                    </label>
+                </div>
+                <div class="icheck-primary d-inline" style="margin-left:15px;">
+                    <input type="checkbox" id="checkboxPrimary4" name="Hobi" value="Tiktokan">
+                    <label for="checkboxPrimary4">
+                        Tiktokan
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Alamat Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email Aktif" name="email">
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>

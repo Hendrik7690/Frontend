@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Pelanggan>
+
+
+<div class="card">
+    <div class="card-header">
+        <h3 class="card-title">Data Pelanggan</h3>
+    </div>
+    <div class="card-body col-2">
+        <button onclick="window.location.href = '@Url.Action("TambahData", "Home")';" type="button" class="btn btn-block btn-primary">
+            <i class="fas fa-plus"></i>
+            <span style="margin-left: 10px;">
+                Tambah Data
+            </span>
+        </button>
+    </div>
+    <!-- /.card-header -->
+    <div class="card-body">
+        <table id="example1" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(Model => Model.id)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(Model => Model.title)
+                    </th>
+                    <th>
+                        Aksi
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.id)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.title)
+                        </td>
+                        <td>
+                            <button class="btn btn-primary">Edit</button> | <button class="btn btn-danger">Hapus</button>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+    </div>
+    <!-- /.card-body -->
+</div>
